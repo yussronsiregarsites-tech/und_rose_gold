@@ -1054,28 +1054,23 @@ function compressImage(file, maxWidth, maxHeight, quality) {
                 canvas.width = width; canvas.height = height;
                 var ctx = canvas.getContext('2d');
                 
-                // ✅ DETEKSI TIPE FILE UNTUK PERTAHANKAN TRANSPARANSI
                 var fileType = file.type || '';
                 var isTransparentFormat = (fileType === 'image/png' || fileType === 'image/webp');
                 
-                // ✅ PILIH FORMAT OUTPUT YANG SESUAI
-                // PNG & WebP mendukung transparansi, JPEG TIDAK
                 var outputFormat;
                 if (isTransparentFormat) {
-                    // Untuk PNG/WebP: gunakan format yang sama agar transparansi terjaga
                     outputFormat = fileType;
                 } else {
-                    // Untuk JPEG: tetap gunakan JPEG
                     outputFormat = 'image/jpeg';
                 }
                 
-                // ✅ JANGAN SET BACKGROUND PUTIH - biarkan transparan!
-                // ctx.fillStyle = 'white';  ← JANGAN AKTIFKAN INI
-                // ctx.fillRect(0, 0, width, height);  ← JANGAN AKTIFKAN INI
+                // ✅ TAMBAHKAN BACKGROUND PUTIH UNTUK FORMAT TRANSPARAN
+                if (isTransparentFormat) {
+                    ctx.fillStyle = '#FFFFFF'; // Background putih
+                    ctx.fillRect(0, 0, width, height);
+                }
                 
                 ctx.drawImage(img, 0, 0, width, height);
-                
-                // ✅ KONVERSI KE FORMAT YANG BENAR
                 var dataUrl = canvas.toDataURL(outputFormat, quality);
                 resolve(dataUrl);
             };
@@ -1084,7 +1079,6 @@ function compressImage(file, maxWidth, maxHeight, quality) {
         reader.readAsDataURL(file);
     });
 }
-
 function initSilentAdminTap() {
     var heartEl = $('footer-heart');
     if (!heartEl) return;

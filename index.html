@@ -446,11 +446,11 @@ box-shadow: 0 4px 15px rgba(183, 110, 121, 0.3);
 </div>
 <div id="toast-container" class="fixed top-5 right-5 z-[999999] flex flex-col gap-3 pointer-events-none"></div>
 <div id="upload-progress" class="upload-progress">
-    <div class="flex items-center justify-between">
-        <span class="text-xs font-semibold text-gray-700"><i class="fa-solid fa-cloud-arrow-up mr-1 text-rose"></i> Mengupload...</span>
-        <span id="upload-progress-text" class="text-xs text-gray-500">0%</span>
-    </div>
-    <div class="upload-progress-bar"><div id="upload-progress-fill" class="upload-progress-fill"></div></div>
+<div class="flex items-center justify-between">
+<span class="text-xs font-semibold text-gray-700"><i class="fa-solid fa-cloud-arrow-up mr-1 text-rose"></i> Mengupload...</span>
+<span id="upload-progress-text" class="text-xs text-gray-500">0%</span>
+</div>
+<div class="upload-progress-bar"><div id="upload-progress-fill" class="upload-progress-fill"></div></div>
 </div>
 <audio id="bg-music" loop preload="auto"></audio>
 <button id="pwa-install-btn" onclick="installPWA()" title="Install Aplikasi" aria-label="Install Aplikasi"><i class="fa-solid fa-download"></i></button>
@@ -627,9 +627,9 @@ box-shadow: 0 4px 15px rgba(183, 110, 121, 0.3);
 <div class="mb-4 text-left"><label class="block text-gray-600 text-xs font-semibold mb-1.5" for="rsvp-status">Kehadiran</label><select id="rsvp-status" required class="rsvp-input" onchange="toggleJumlah(this.value)" aria-label="Status Kehadiran"><option value="">Pilih Status Kehadiran</option><option value="Hadir">Hadir</option><option value="Tidak Hadir">Tidak Hadir</option></select></div>
 <div id="jumlah-wrapper" class="mb-4 text-left hidden"><label class="block text-gray-600 text-xs font-semibold mb-1.5" for="rsvp-jumlah">Jumlah Tamu (Maks 10)</label><input type="number" id="rsvp-jumlah" min="1" max="10" value="1" class="rsvp-input" aria-label="Jumlah Tamu"></div>
 <div class="mb-2 text-left">
-    <label class="block text-gray-600 text-xs font-semibold mb-1.5" for="rsvp-message">Ucapan & Doa</label>
-    <textarea id="rsvp-message" required rows="4" class="rsvp-input" placeholder="Tulis ucapan dan doa terbaik Anda..." maxlength="500" oninput="updateCharCounter(this)" aria-label="Ucapan dan Doa"></textarea>
-    <div id="char-counter" class="char-counter">0 / 500 karakter</div>
+<label class="block text-gray-600 text-xs font-semibold mb-1.5" for="rsvp-message">Ucapan & Doa</label>
+<textarea id="rsvp-message" required rows="4" class="rsvp-input" placeholder="Tulis ucapan dan doa terbaik Anda..." maxlength="500" oninput="updateCharCounter(this)" aria-label="Ucapan dan Doa"></textarea>
+<div id="char-counter" class="char-counter">0 / 500 karakter</div>
 </div>
 <button type="submit" id="btn-submit-rsvp" class="w-full button-gold py-3.5 text-sm flex items-center justify-center gap-2"><i class="fa-solid fa-paper-plane"></i> Kirim Ucapan</button>
 </form>
@@ -671,20 +671,20 @@ box-shadow: 0 4px 15px rgba(183, 110, 121, 0.3);
 </div>
 <h1 class="text-5xl sm:text-6xl text-rose mb-3" data-aos="reveal-up"><span class="val-pria-nick"></span> & <span class="val-wanita-nick"></span></h1>
 <div class="mt-8 mb-6" data-aos="reveal-up" data-aos-delay="100">
-    <button onclick="shareUndangan()" class="share-btn" aria-label="Bagikan Undangan"><i class="fa-solid fa-share-nodes"></i><span>Bagikan Undangan</span></button>
+<button onclick="shareUndangan()" class="share-btn" aria-label="Bagikan Undangan"><i class="fa-solid fa-share-nodes"></i><span>Bagikan Undangan</span></button>
 </div>
 <p class="text-xs text-gray-400 mt-4">Made with <span id="footer-heart" class="footer-heart text-red-400 px-0.5 text-base" aria-label="Tap 5x untuk admin">❤️</span> for <span class="val-pria-nick"></span> & <span class="val-wanita-nick"></span></p>
 <div class="wa-promo-section text-center" data-aos="reveal-up" data-aos-delay="200">
-    <div class="flex items-center justify-center gap-3 mb-3">
-        <div class="h-px w-12 bg-gradient-to-r from-transparent to-gray-300"></div>
-        <i class="fa-brands fa-whatsapp text-green-500/60 text-sm"></i>
-        <div class="h-px w-12 bg-gradient-to-l from-transparent to-gray-300"></div>
-    </div>
-    <a href="https://wa.me/6285123569250?text=Halo%2C%20saya%20tertarik%20dengan%20undangan%20digital" target="_blank" rel="noopener noreferrer" class="wa-promo-link">
-        <span class="wa-icon-wrap"><i class="fa-brands fa-whatsapp"></i></span>
-        <span>Custom undangan digital</span>
-        <i class="fa-solid fa-arrow-up-right-from-square ext-icon"></i>
-    </a>
+<div class="flex items-center justify-center gap-3 mb-3">
+<div class="h-px w-12 bg-gradient-to-r from-transparent to-gray-300"></div>
+<i class="fa-brands fa-whatsapp text-green-500/60 text-sm"></i>
+<div class="h-px w-12 bg-gradient-to-l from-transparent to-gray-300"></div>
+</div>
+<a href="https://wa.me/6285123569250?text=Halo%2C%20saya%20tertarik%20dengan%20undangan%20digital" target="_blank" rel="noopener noreferrer" class="wa-promo-link">
+<span class="wa-icon-wrap"><i class="fa-brands fa-whatsapp"></i></span>
+<span>Custom undangan digital</span>
+<i class="fa-solid fa-arrow-up-right-from-square ext-icon"></i>
+</a>
 </div>
 </div>
 <img id="orn-footer-bl" src="https://indoinvite.com/nikah/template/rose/rose-gold/RG-BKR.webp" class="ornament ornament-bl opacity-40 parallax-layer" data-parallax-speed="0.1" alt="" loading="lazy" onerror="this.style.display='none'">
@@ -709,13 +709,13 @@ box-shadow: 0 4px 15px rgba(183, 110, 121, 0.3);
 </div>
 <div id="confirm-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center opacity-0 pointer-events-none px-4">
 <div class="bg-white rounded-2xl shadow-2xl w-full transform scale-95 p-6 text-center" id="confirm-modal-content">
-    <div id="confirm-icon" class="confirm-icon warning"><i class="fa-solid fa-triangle-exclamation"></i></div>
-    <h3 id="confirm-title" class="text-xl font-bold text-gray-800 mb-2">Konfirmasi</h3>
-    <p id="confirm-message" class="text-sm text-gray-500 mb-6">Apakah Anda yakin?</p>
-    <div class="flex gap-3">
-        <button onclick="closeConfirmModal()" class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-600 py-3 rounded-xl font-semibold transition">Batal</button>
-        <button id="confirm-ok-btn" class="flex-1 button-gold py-3 rounded-xl font-semibold">Ya, Lanjutkan</button>
-    </div>
+<div id="confirm-icon" class="confirm-icon warning"><i class="fa-solid fa-triangle-exclamation"></i></div>
+<h3 id="confirm-title" class="text-xl font-bold text-gray-800 mb-2">Konfirmasi</h3>
+<p id="confirm-message" class="text-sm text-gray-500 mb-6">Apakah Anda yakin?</p>
+<div class="flex gap-3">
+<button onclick="closeConfirmModal()" class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-600 py-3 rounded-xl font-semibold transition">Batal</button>
+<button id="confirm-ok-btn" class="flex-1 button-gold py-3 rounded-xl font-semibold">Ya, Lanjutkan</button>
+</div>
 </div>
 </div>
 <div id="pin-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[9999999] flex items-center justify-center opacity-0 pointer-events-none px-4" role="dialog" aria-label="Verifikasi Admin">
@@ -793,7 +793,7 @@ box-shadow: 0 4px 15px rgba(183, 110, 121, 0.3);
 </div>
 <div><label class="text-[11px] text-gray-500 font-bold">Target Countdown (YYYY-MM-DD)</label><input type="date" id="set-countdownTarget" class="w-full px-2.5 py-1.5 border border-gray-200 rounded-lg outline-none text-sm focus:border-rose-light mt-1"></div>
 <div>
-<label class="text-[11px] text-gray-500 font-bold"> URL Musik (.mp3)</label>
+<label class="text-[11px] text-gray-500 font-bold">🎵 URL Musik (.mp3)</label>
 <div class="photo-upload-row mt-1">
 <div class="preview-wrap" id="preview-musicUrl" style="width:60px;height:60px;"><img src="" alt="preview" class="hidden" id="preview-img-musicUrl"><span class="no-image" id="noimg-musicUrl"><i class="fa-solid fa-music"></i></span></div>
 <div class="field-group flex gap-2"><input type="text" id="set-musicUrl" class="flex-1 px-2.5 py-1.5 border border-gray-200 rounded-lg outline-none text-xs focus:border-rose-light" placeholder="URL musik (.mp3)"><button type="button" onclick="triggerUpload('set-musicUrl', 'musicUrl', 'audio')" class="bg-rose text-white px-3 py-1.5 rounded-lg text-xs hover:bg-rose-mid transition whitespace-nowrap"><i class="fa-solid fa-upload mr-1"></i> Upload</button></div>
@@ -803,7 +803,7 @@ box-shadow: 0 4px 15px rgba(183, 110, 121, 0.3);
 </div>
 </details>
 <details class="bg-gray-50 p-4 rounded-xl border border-gray-100">
-<summary class="text-base font-bold text-gray-800 cursor-pointer select-none">3.  Dekorasi (Background, Border, Ornamen)</summary>
+<summary class="text-base font-bold text-gray-800 cursor-pointer select-none">3. 🎨 Dekorasi (Background, Border, Ornamen)</summary>
 <div class="mt-4 space-y-3">
 <p class="text-[11px] text-gray-500">Upload gambar kustom untuk mengubah tampilan dekorasi. Kosongkan untuk pakai default.</p>
 <div>
@@ -814,7 +814,7 @@ box-shadow: 0 4px 15px rgba(183, 110, 121, 0.3);
 </div>
 </div>
 <div>
-<label class="text-[11px] text-gray-500 font-bold">️ Border Frame (Sampul, Home, Footer)</label>
+<label class="text-[11px] text-gray-500 font-bold">🖼️ Border Frame (Sampul, Home, Footer)</label>
 <div class="photo-upload-row mt-1">
 <div class="preview-wrap" id="preview-borderFrame"><img src="" alt="preview" class="hidden" id="preview-img-borderFrame"><span class="no-image" id="noimg-borderFrame"><i class="fa-regular fa-image"></i></span></div>
 <div class="field-group flex gap-2"><input type="text" id="set-borderFrame" class="flex-1 px-2.5 py-1.5 border border-gray-200 rounded-lg outline-none text-xs focus:border-rose-light" placeholder="URL border frame"><button type="button" onclick="triggerUpload('set-borderFrame', 'borderFrame')" class="bg-rose text-white px-3 py-1.5 rounded-lg text-xs hover:bg-rose-mid transition whitespace-nowrap"><i class="fa-solid fa-upload mr-1"></i> Upload</button></div>
@@ -916,6 +916,7 @@ box-shadow: 0 4px 15px rgba(183, 110, 121, 0.3);
 'use strict';
 AOS.init({ duration: 1000, once: false, mirror: true, easing: 'ease-out-cubic', offset: 80, anchorPlacement: 'top-bottom' });
 
+// ✅ URL GOOGLE APPS SCRIPT YANG SUDAH DI-DEPLOY
 var GOOGLE_API_URL = "https://script.google.com/macros/s/AKfycbz4FgbjGU5hYR-oIO0Fv6dou5JM-gN9xyPZ1utMYdwFPaA2axnZivgfYGdJY-_gzLl7Hg/exec";
 var GALLERY_COUNT = 6;
 var FETCH_TIMEOUT = 10000;
@@ -1040,7 +1041,7 @@ function showUploadProgress() { var el = $('upload-progress'); if (el) el.classL
 function updateUploadProgress(percent) { var fill = $('upload-progress-fill'); var text = $('upload-progress-text'); if (fill) fill.style.width = percent + '%'; if (text) text.textContent = Math.round(percent) + '%'; }
 function hideUploadProgress() { var el = $('upload-progress'); if (el) el.classList.remove('show'); }
 
-// ✅✅✅ PERBAIKAN UTAMA: PERTAHANKAN TRANSPARANSI PNG/WEBP ✅✅✅
+// ✅✅✅ FUNGSI KOMPRESI GAMBAR - MENDUKUNG TRANSPARANSI PNG/WEBP ✅✅✅
 function compressImage(file, maxWidth, maxHeight, quality) {
     return new Promise(function(resolve) {
         var reader = new FileReader();
@@ -1049,36 +1050,63 @@ function compressImage(file, maxWidth, maxHeight, quality) {
             img.onload = function() {
                 var canvas = document.createElement('canvas');
                 var width = img.width, height = img.height;
-                if (width > maxWidth) { height = (height * maxWidth) / width; width = maxWidth; }
-                if (height > maxHeight) { width = (width * maxHeight) / height; height = maxHeight; }
-                canvas.width = width; canvas.height = height;
+                
+                // Resize jika lebih besar dari max
+                if (width > maxWidth) { height = Math.round((height * maxWidth) / width); width = maxWidth; }
+                if (height > maxHeight) { width = Math.round((width * maxHeight) / height); height = maxHeight; }
+                
+                canvas.width = width;
+                canvas.height = height;
                 var ctx = canvas.getContext('2d');
                 
-                var fileType = file.type || '';
+                // ✅ DETEKSI FORMAT FILE
+                var fileType = (file.type || '').toLowerCase();
                 var isTransparentFormat = (fileType === 'image/png' || fileType === 'image/webp');
                 
-                var outputFormat;
+                // ✅ PILIH FORMAT OUTPUT
+                var outputFormat, outputQuality;
                 if (isTransparentFormat) {
+                    // PNG/WebP: pertahankan format asli untuk menjaga transparansi
                     outputFormat = fileType;
+                    outputQuality = undefined; // PNG tidak pakai quality parameter
                 } else {
+                    // JPEG: gunakan JPEG dengan quality
                     outputFormat = 'image/jpeg';
-                }
-                
-                // ✅ TAMBAHKAN BACKGROUND PUTIH UNTUK FORMAT TRANSPARAN
-                if (isTransparentFormat) {
-                    ctx.fillStyle = '#FFFFFF'; // Background putih
+                    outputQuality = quality;
+                    
+                    // ✅ UNTUK JPEG: isi background putih (karena JPEG tidak support transparansi)
+                    ctx.fillStyle = '#FFFFFF';
                     ctx.fillRect(0, 0, width, height);
                 }
                 
+                // ✅ GAMBAR KE CANVAS
+                // Untuk PNG/WebP: biarkan transparan (jangan fill background)
+                // Untuk JPEG: sudah di-fill putih sebelumnya
                 ctx.drawImage(img, 0, 0, width, height);
-                var dataUrl = canvas.toDataURL(outputFormat, quality);
+                
+                // ✅ KONVERSI KE DATA URL
+                var dataUrl;
+                if (isTransparentFormat) {
+                    dataUrl = canvas.toDataURL(outputFormat); // tanpa quality untuk PNG
+                } else {
+                    dataUrl = canvas.toDataURL(outputFormat, outputQuality);
+                }
+                
                 resolve(dataUrl);
             };
+            img.onerror = function() {
+                // Fallback jika gambar gagal dimuat
+                resolve(e.target.result);
+            };
             img.src = e.target.result;
+        };
+        reader.onerror = function() {
+            resolve(null);
         };
         reader.readAsDataURL(file);
     });
 }
+
 function initSilentAdminTap() {
     var heartEl = $('footer-heart');
     if (!heartEl) return;
@@ -1330,10 +1358,12 @@ $('file-upload-input').addEventListener('change', function(e) {
         processPromise = compressImage(file, 1600, 1600, 0.85);
     }
     processPromise.then(function(base64) {
+        if (!base64) { showToast('Gagal memproses gambar', 'error'); hideUploadProgress(); return; }
         updateUploadProgress(50);
         var payload = { action: 'upload', filename: file.name, fieldName: pendingUploadField, base64Data: base64 };
         return fetch(GOOGLE_API_URL, { method: 'POST', body: JSON.stringify(payload) }).then(function(res) { return res.json(); });
     }).then(function(result) {
+        if (!result) return;
         updateUploadProgress(100);
         if (result.status === 'success' && result.link) {
             var field = $(pendingUploadField);
@@ -1580,7 +1610,7 @@ function buildDecorGrids(data) {
             var url = (data && data[field]) ? data[field] : '';
             var item = document.createElement('div');
             item.className = 'decor-item';
-            item.innerHTML = 
+            item.innerHTML =
                 '<div class="decor-preview" id="preview-' + field + '">' +
                     '<img src="' + escapeHtml(url) + '" alt="preview" ' + (url ? '' : 'style="display:none;"') + '>' +
                     '<span class="no-image" ' + (url ? 'style="display:none;"' : '') + '><i class="fa-regular fa-image"></i></span>' +
@@ -1978,7 +2008,7 @@ function buildGalleryUrlFields() {
         div.className = 'space-y-1 bg-gray-50 p-2 rounded-lg border border-gray-100';
         div.innerHTML = '<label class="text-[11px] text-gray-500 font-semibold">Galeri ' + i + '</label>' +
             '<div class="photo-upload-row">' +
-            '<div class="preview-wrap" id="preview-galeri' + i + '"><img src="" alt="preview" class="hidden" id="preview-img-galeri' + i + '"><span class="no-image" id="noimg-galeri' + i + '"><i class="fa-regular fa-image"></i></span></div>' +
+            '<div class="preview-wrap" id="preview-galeri' + i + '"><img src="" alt="preview" class="hidden" id="preview-img-galeri' + i + '"><span class="no-image" id="noimg-galeri' + i + '><i class="fa-regular fa-image"></i></span></div>' +
             '<div class="field-group flex gap-2"><input type="text" id="set-galeri' + i + '" class="flex-1 px-2.5 py-1.5 border border-gray-200 rounded-lg outline-none text-xs focus:border-rose-light" placeholder="URL gambar">' +
             '<button type="button" onclick="triggerUpload(\'set-galeri' + i + '\', \'galeri' + i + '\')" class="bg-rose text-white px-3 py-1.5 rounded-lg text-xs hover:bg-rose-mid transition whitespace-nowrap"><i class="fa-solid fa-upload mr-1"></i> Upload</button></div>' +
             '</div>';
